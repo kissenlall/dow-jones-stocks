@@ -1,5 +1,7 @@
 # Dow Jones Stocks App (RBC Coding Challenge)
 
+[![Java CI with Maven](https://github.com/kissenlall/dow-jones-stocks/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/kissenlall/dow-jones-stocks/actions/workflows/maven.yml)
+
 ## Requirements
 
 - upload a bulk data set

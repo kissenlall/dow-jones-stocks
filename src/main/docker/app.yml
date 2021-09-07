@@ -1,0 +1,17 @@
+version: '2'
+services:
+  dow-jones-stocks-app:
+    image: dow-jones-stocks:latest
+    ports:
+    - 8080:8080
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev,swagger
+      - SPRING_R2DBC_URL=jdbc:postgresql://dow-jones-stocks-postgresql:5432/demo
+      - SPRING_R2DBC_HOST=dow-jones-stocks-postgresql
+      - SPRING_R2DBC_PORT=5432
+      - SPRING_R2DBC_NAME=demo
+      - APP_SLEEP=30
+  dow-jones-stocks-postgresql:
+    extends:
+      file: postgresql.yml
+      service: dow-jones-stocks-postgresql

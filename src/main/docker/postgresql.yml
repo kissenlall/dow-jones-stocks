@@ -1,0 +1,10 @@
+version: '2'
+services:
+  dow-jones-stocks-postgresql:
+    image: postgres:12.1
+    environment:
+      - POSTGRES_DB=demo
+      - POSTGRES_USER=developer
+      - POSTGRES_PASSWORD=p4SSW0rd
+    ports:
+      - 5432:5432
